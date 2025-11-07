@@ -1,1 +1,0 @@
-print('1 point will be between 150usd and 1000usd')
