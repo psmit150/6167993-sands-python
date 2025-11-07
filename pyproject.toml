@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sands-project"
+version = "0.1.0"
+description = "university python introduction"
+authors = [
+    {name = "Pim Smit", email = "pfsmit@tudelft.nl"}
+]
+dependencies = ["numpy", "scipy", "matplotlib"]
