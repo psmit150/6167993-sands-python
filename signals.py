@@ -1,23 +1,12 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "b3fcce97-972a-4a7f-adef-1c93d78967dd",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "",
-   "name": ""
-  },
-  "language_info": {
-   "name": ""
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+import numpy as np
+from scipy import signal
+
+def generate_sine_wave(frequency,amplitude,phase,duration,sampling_rate):
+    t = np.linspace(0, duration, int(sampling_rate*duration))
+    y = amplitude * np.sin(2*np.pi*frequency*t+phase)
+    return t,y
+
+def generate_sawtooth_wave(frequency,amplitude,phase,duration,sampling_rate):
+    t = np.linspace(0, duration, int(sampling_rate*duration))
+    y = amplitude * signal.sawtooth(2*np.pi*frequency*t+phase)
+    return t,y
