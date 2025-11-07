@@ -24,6 +24,7 @@ def signal_addition(y1, y2):
 def signal_multiplication(y1, y2):
     return y1 * y2
 
+
 def plot_signals(signals, labels=None, title="Signal Operation", xlabel="Time (s)", ylabel="Amplitude"):
     plt.figure(figsize=(8, 4))
     for i, (t, y) in enumerate(signals):
